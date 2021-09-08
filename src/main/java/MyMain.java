@@ -4,7 +4,7 @@ public class MyMain {
 
     // Calculates the median of the three inputs
     public static int median(int a, int b, int c) {
-        if (a > b && a > c || a < b && a > c) {
+        if (a > b && a < c || a < b && a > c) {
             return a;
         }
         else if (b > a && b < c || b > c && b < a) {
