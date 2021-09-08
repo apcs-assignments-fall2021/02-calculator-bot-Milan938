@@ -40,28 +40,28 @@ public class MyMain {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Which command would you like to carry out?");
+        System.out.print("Which command would you like to carry out? ");
         String answer = scan.next();
-        if (answer == ("median")) {
-            System.out.print("What's the first number?");
+        if (answer.equals("median")) {
+            System.out.print("What's the first number? ");
             int h = scan.nextInt();
-            System.out.print("What's the second number?");
+            System.out.print("What's the second number? ");
             int j = scan.nextInt();
-            System.out.print("What's the third number?");
+            System.out.print("What's the third number? ");
             int k = scan.nextInt();
             System.out.print(median(h, j, k));
         }
-        if (answer == "magnitude") {
-            System.out.print("What's the first number?");
+        if (answer.equals("magnitude")) {
+            System.out.print("What's the first number? ");
             int z = scan.nextInt();
-            System.out.print("What's the second number?");
+            System.out.print("What's the second number? ");
             int x = scan.nextInt();
             System.out.print(magnitude(z, x));
         }
-        if (answer == "pythagoras") {
-            System.out.print("What's the first number?");
+        if (answer.equals("pythagoras")) {
+            System.out.print("What's the first number? ");
             int i = scan.nextInt();
-            System.out.print("What's the second number?");
+            System.out.print("What's the second number? ");
             int o = scan.nextInt();
             System.out.print(pythagoras(i, o));
         }
